@@ -86,6 +86,12 @@ class MainActivity : AppCompatActivity() {
 
             txtMessage.text = inputMessage
 
+//            토스트로 "입력한 문구 : ??" 형태로 (String) 문장 가공.
+
+            val formattedMessage = "입력한 문구 : ${inputMessage}"
+
+            Toast.makeText(this, formattedMessage, Toast.LENGTH_SHORT).show()
+
         }
 
     }
