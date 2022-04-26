@@ -76,6 +76,17 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        btnCopy.setOnClickListener {
+
+//            EditText에 입력된 문구 (text 속성의 값) 를 변수에 저장 (getter 함수 자동 호출)
+
+            val inputMessage = edtMessage.text.toString()
+
+//            TextView의 문구 (text 값)에 대입 (setter 함수 자동 호출)
+
+            txtMessage.text = inputMessage
+
+        }
 
     }
 
