@@ -46,7 +46,36 @@ class MainActivity : AppCompatActivity() {
             val myBirthYear = 1988 // Int로 자동 설정
             val myHeight : Double = 185.5 // Double 수동 설정 예시
 
+
         }
+
+
+        btnConditionTest.setOnClickListener {
+
+            val age = 25
+
+            when (age) {
+
+                10 -> {
+                    Toast.makeText(this, "10살입니다.", Toast.LENGTH_SHORT).show()
+                }
+                20, 30, 40 -> {
+
+//                    세 가지 경우 동시 대응
+
+                    Toast.makeText(this, "20 or 30 or 40살 입니다.", Toast.LENGTH_SHORT).show()
+                }
+                in 41..50 -> {
+//                    41 ~50 사이의 값
+
+                }
+                else -> {
+//                    그 외의 모든 경우
+                }
+            }
+
+        }
+
 
     }
 
